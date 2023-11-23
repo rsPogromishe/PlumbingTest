@@ -1,0 +1,6 @@
+framework module Pods_PlumbingTest {
+  umbrella header "Pods-PlumbingTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162D731B8B76E93025B6F106 /* Pods_PlumbingTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8931F2B796BB4753B7E653C2 /* Pods_PlumbingTest.framework */; };
+		582B44262B0E1282008DEDB3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B44252B0E1282008DEDB3 /* API.swift */; };
+		582B44292B0E145E008DEDB3 /* SearchVacanciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B44282B0E145E008DEDB3 /* SearchVacanciesModel.swift */; };
+		582B442B2B0E168A008DEDB3 /* VacancyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B442A2B0E168A008DEDB3 /* VacancyModel.swift */; };
+		582B442E2B0E54DB008DEDB3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B442D2B0E54DB008DEDB3 /* SearchBar.swift */; };
+		582B44342B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B44332B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift */; };
+		582B44372B0E6E19008DEDB3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B44362B0E6E19008DEDB3 /* String.swift */; };
+		582B443B2B0FDD01008DEDB3 /* FindVacancyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B443A2B0FDD01008DEDB3 /* FindVacancyPresenter.swift */; };
+		582B443D2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B443C2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift */; };
+		582B443F2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B443E2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift */; };
+		582B44412B0FDDC1008DEDB3 /* FindVacancyViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B44402B0FDDC1008DEDB3 /* FindVacancyViewInput.swift */; };
+		58DD48D02B0E0E8100F597DC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD48CF2B0E0E8100F597DC /* NetworkService.swift */; };
+		58DD48D32B0E103500F597DC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD48D22B0E103500F597DC /* NetworkError.swift */; };
 		58F8E4452B0E0C28002D9147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F8E4442B0E0C28002D9147 /* AppDelegate.swift */; };
 		58F8E4472B0E0C28002D9147 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F8E4462B0E0C28002D9147 /* SceneDelegate.swift */; };
-		58F8E4492B0E0C28002D9147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F8E4482B0E0C28002D9147 /* ViewController.swift */; };
-		58F8E44C2B0E0C28002D9147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F8E44A2B0E0C28002D9147 /* Main.storyboard */; };
+		58F8E4492B0E0C28002D9147 /* FindVacancyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F8E4482B0E0C28002D9147 /* FindVacancyListViewController.swift */; };
 		58F8E44E2B0E0C2A002D9147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F8E44D2B0E0C2A002D9147 /* Assets.xcassets */; };
 		58F8E4512B0E0C2A002D9147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F8E44F2B0E0C2A002D9147 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14E4B25E2308CB9EC4073FA0 /* Pods-PlumbingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumbingTest.debug.xcconfig"; path = "Target Support Files/Pods-PlumbingTest/Pods-PlumbingTest.debug.xcconfig"; sourceTree = "<group>"; };
+		582B44252B0E1282008DEDB3 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		582B44282B0E145E008DEDB3 /* SearchVacanciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVacanciesModel.swift; sourceTree = "<group>"; };
+		582B442A2B0E168A008DEDB3 /* VacancyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyModel.swift; sourceTree = "<group>"; };
+		582B442D2B0E54DB008DEDB3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		582B44332B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesListTableViewCell.swift; sourceTree = "<group>"; };
+		582B44362B0E6E19008DEDB3 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		582B443A2B0FDD01008DEDB3 /* FindVacancyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyPresenter.swift; sourceTree = "<group>"; };
+		582B443C2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyPresenterProtocol.swift; sourceTree = "<group>"; };
+		582B443E2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyAssemble.swift; sourceTree = "<group>"; };
+		582B44402B0FDDC1008DEDB3 /* FindVacancyViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyViewInput.swift; sourceTree = "<group>"; };
+		58DD48CF2B0E0E8100F597DC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		58DD48D22B0E103500F597DC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		58F8E4412B0E0C28002D9147 /* PlumbingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlumbingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F8E4442B0E0C28002D9147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58F8E4462B0E0C28002D9147 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		58F8E4482B0E0C28002D9147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		58F8E44B2B0E0C28002D9147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58F8E4482B0E0C28002D9147 /* FindVacancyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyListViewController.swift; sourceTree = "<group>"; };
 		58F8E44D2B0E0C2A002D9147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58F8E4502B0E0C2A002D9147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58F8E4522B0E0C2A002D9147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8931F2B796BB4753B7E653C2 /* Pods_PlumbingTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlumbingTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B36E9653271C270FBE2852 /* Pods-PlumbingTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumbingTest.release.xcconfig"; path = "Target Support Files/Pods-PlumbingTest/Pods-PlumbingTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,150 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162D731B8B76E93025B6F106 /* Pods_PlumbingTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DA252535CACD7C95B623648 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14E4B25E2308CB9EC4073FA0 /* Pods-PlumbingTest.debug.xcconfig */,
+				90B36E9653271C270FBE2852 /* Pods-PlumbingTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		582B44242B0E1276008DEDB3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				582B44252B0E1282008DEDB3 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		582B44272B0E1448008DEDB3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				582B44282B0E145E008DEDB3 /* SearchVacanciesModel.swift */,
+				582B442A2B0E168A008DEDB3 /* VacancyModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		582B442C2B0E54D3008DEDB3 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				582B442D2B0E54DB008DEDB3 /* SearchBar.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		582B442F2B0E5ACC008DEDB3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				582B44302B0E5ADF008DEDB3 /* VacanciesList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		582B44302B0E5ADF008DEDB3 /* VacanciesList */ = {
+			isa = PBXGroup;
+			children = (
+				582B44392B0FDCB2008DEDB3 /* Assemble */,
+				582B44382B0FDC9F008DEDB3 /* Presenter */,
+				582B44312B0E5AFC008DEDB3 /* View */,
+			);
+			path = VacanciesList;
+			sourceTree = "<group>";
+		};
+		582B44312B0E5AFC008DEDB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58F8E4482B0E0C28002D9147 /* FindVacancyListViewController.swift */,
+				582B44402B0FDDC1008DEDB3 /* FindVacancyViewInput.swift */,
+				582B44322B0E5B16008DEDB3 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		582B44322B0E5B16008DEDB3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				582B44332B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		582B44352B0E6E12008DEDB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				582B44362B0E6E19008DEDB3 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		582B44382B0FDC9F008DEDB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				582B443A2B0FDD01008DEDB3 /* FindVacancyPresenter.swift */,
+				582B443C2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		582B44392B0FDCB2008DEDB3 /* Assemble */ = {
+			isa = PBXGroup;
+			children = (
+				582B443E2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift */,
+			);
+			path = Assemble;
+			sourceTree = "<group>";
+		};
+		58DD48CC2B0E0E1E00F597DC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				58F8E4442B0E0C28002D9147 /* AppDelegate.swift */,
+				58F8E4462B0E0C28002D9147 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		58DD48CD2B0E0E5C00F597DC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				582B44242B0E1276008DEDB3 /* API */,
+				58DD48D12B0E102600F597DC /* Errors */,
+				58DD48CE2B0E0E7100F597DC /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		58DD48CE2B0E0E7100F597DC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				58DD48CF2B0E0E8100F597DC /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		58DD48D12B0E102600F597DC /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				58DD48D22B0E103500F597DC /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		58F8E4382B0E0C28002D9147 = {
 			isa = PBXGroup;
 			children = (
 				58F8E4432B0E0C28002D9147 /* PlumbingTest */,
 				58F8E4422B0E0C28002D9147 /* Products */,
+				0DA252535CACD7C95B623648 /* Pods */,
+				E489AB112A6CD5AFDB107FAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +215,25 @@
 		58F8E4432B0E0C28002D9147 /* PlumbingTest */ = {
 			isa = PBXGroup;
 			children = (
-				58F8E4442B0E0C28002D9147 /* AppDelegate.swift */,
-				58F8E4462B0E0C28002D9147 /* SceneDelegate.swift */,
-				58F8E4482B0E0C28002D9147 /* ViewController.swift */,
-				58F8E44A2B0E0C28002D9147 /* Main.storyboard */,
+				582B44352B0E6E12008DEDB3 /* Extensions */,
+				582B442F2B0E5ACC008DEDB3 /* Modules */,
+				582B442C2B0E54D3008DEDB3 /* CustomUI */,
+				582B44272B0E1448008DEDB3 /* Entities */,
+				58DD48CD2B0E0E5C00F597DC /* Networking */,
+				58DD48CC2B0E0E1E00F597DC /* Application */,
 				58F8E44D2B0E0C2A002D9147 /* Assets.xcassets */,
 				58F8E44F2B0E0C2A002D9147 /* LaunchScreen.storyboard */,
 				58F8E4522B0E0C2A002D9147 /* Info.plist */,
 			);
 			path = PlumbingTest;
+			sourceTree = "<group>";
+		};
+		E489AB112A6CD5AFDB107FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8931F2B796BB4753B7E653C2 /* Pods_PlumbingTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58F8E4552B0E0C2A002D9147 /* Build configuration list for PBXNativeTarget "PlumbingTest" */;
 			buildPhases = (
+				709669FC00C5126A14B253C9 /* [CP] Check Pods Manifest.lock */,
+				58F8E4582B0E0D56002D9147 /* ShellScript */,
 				58F8E43D2B0E0C28002D9147 /* Sources */,
 				58F8E43E2B0E0C28002D9147 /* Frameworks */,
 				58F8E43F2B0E0C28002D9147 /* Resources */,
+				0A88D724851FF641E081E845 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +299,97 @@
 			files = (
 				58F8E4512B0E0C2A002D9147 /* LaunchScreen.storyboard in Resources */,
 				58F8E44E2B0E0C2A002D9147 /* Assets.xcassets in Resources */,
-				58F8E44C2B0E0C28002D9147 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A88D724851FF641E081E845 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlumbingTest/Pods-PlumbingTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlumbingTest/Pods-PlumbingTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlumbingTest/Pods-PlumbingTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58F8E4582B0E0D56002D9147 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:\"\nexport PATH+=~/\nexport PATH+=\"portable_swiftlint\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		709669FC00C5126A14B253C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlumbingTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58F8E43D2B0E0C28002D9147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58F8E4492B0E0C28002D9147 /* ViewController.swift in Sources */,
+				58F8E4492B0E0C28002D9147 /* FindVacancyListViewController.swift in Sources */,
+				582B44372B0E6E19008DEDB3 /* String.swift in Sources */,
 				58F8E4452B0E0C28002D9147 /* AppDelegate.swift in Sources */,
+				58DD48D02B0E0E8100F597DC /* NetworkService.swift in Sources */,
+				582B442B2B0E168A008DEDB3 /* VacancyModel.swift in Sources */,
 				58F8E4472B0E0C28002D9147 /* SceneDelegate.swift in Sources */,
+				582B44412B0FDDC1008DEDB3 /* FindVacancyViewInput.swift in Sources */,
+				582B443D2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift in Sources */,
+				582B442E2B0E54DB008DEDB3 /* SearchBar.swift in Sources */,
+				582B443F2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift in Sources */,
+				582B443B2B0FDD01008DEDB3 /* FindVacancyPresenter.swift in Sources */,
+				582B44342B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift in Sources */,
+				582B44262B0E1282008DEDB3 /* API.swift in Sources */,
+				58DD48D32B0E103500F597DC /* NetworkError.swift in Sources */,
+				582B44292B0E145E008DEDB3 /* SearchVacanciesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		58F8E44A2B0E0C28002D9147 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58F8E44B2B0E0C28002D9147 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		58F8E44F2B0E0C2A002D9147 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +517,7 @@
 		};
 		58F8E4562B0E0C2A002D9147 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14E4B25E2308CB9EC4073FA0 /* Pods-PlumbingTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,15 +528,15 @@
 				INFOPLIST_FILE = PlumbingTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = aGRos.PlumbingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = PlumbingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,6 +546,7 @@
 		};
 		58F8E4572B0E0C2A002D9147 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B36E9653271C270FBE2852 /* Pods-PlumbingTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,15 +557,15 @@
 				INFOPLIST_FILE = PlumbingTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = aGRos.PlumbingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = PlumbingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
