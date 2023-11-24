@@ -11,7 +11,6 @@ import Combine
 enum API {
     static private let agent = NetworkService()
     static private let base = URL(string: "https://api.hh.ru")!
-    static let key = ["Authorization": "Basic cmVnOnJlZw=="]
 }
 
 extension API {
@@ -23,5 +22,10 @@ extension API {
             URLQueryItem(name: "page", value: "\(pageNumber)")
         ]
         return agent.run(method: HttpMethod.get.rawValue, url: url, parameters: items, headers: nil, body: nil)
+    }
+
+    static func getVacancyInfo(vacancyID: String) -> AnyPublisher<VacancyModel, Error> {
+        let url = base.appendingPathComponent("/vacancies/\(vacancyID)")
+        return agent.run(method: HttpMethod.get.rawValue, url: url, headers: nil, body: nil)
     }
 }

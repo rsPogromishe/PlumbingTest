@@ -42,4 +42,9 @@ class FindVacancyPresenter: FindVacancyPresenterProtocol {
         vacancies.removeAll()
         self.view?.reloadData(isVacanciesEmpty: vacancies.isEmpty)
     }
+
+    func openVacancyInfo(indexPath: Int) {
+        let viewController = VacancyInfoAssemble.assembleVacancyInfoModule(vacancyID: vacancies[indexPath].id ?? "")
+        self.view?.openVacancyInfo(viewController: viewController)
+    }
 }

@@ -13,6 +13,14 @@ struct VacancyModel: Codable {
     let salary: Salary?
     let employer: Employer?
     let snippet: Snippet?
+    let description: String?
+    let address: Address?
+}
+
+// MARK: - Address
+
+struct Address: Codable {
+    let raw: String?
 }
 
 // MARK: - Employer

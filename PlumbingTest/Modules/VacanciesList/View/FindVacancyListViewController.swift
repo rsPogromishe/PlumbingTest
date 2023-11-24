@@ -76,6 +76,12 @@ extension FindVacancyListViewController: FindVacancyViewInput {
         tableView.isHidden = isVacanciesEmpty
         emptyListLabel.isHidden = !isVacanciesEmpty
     }
+
+    func openVacancyInfo(viewController: UIViewController) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 }
 
 // MARK: TableView Delegate/DataSource
@@ -97,6 +103,8 @@ extension FindVacancyListViewController: UITableViewDelegate, UITableViewDataSou
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.openVacancyInfo(indexPath: indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

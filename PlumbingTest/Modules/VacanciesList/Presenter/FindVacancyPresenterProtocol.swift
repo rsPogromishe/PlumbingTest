@@ -12,4 +12,5 @@ protocol FindVacancyPresenterProtocol {
 
     func getVacancy(searchText: String, pageNumber: Int)
     func removeAllVacancies()
+    func openVacancyInfo(indexPath: Int)
 }
