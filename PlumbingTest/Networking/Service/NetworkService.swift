@@ -25,7 +25,6 @@ class NetworkService {
         urlRequest.httpMethod = method
 
         headers?.forEach { (key, value) in urlRequest.addValue("\(value)", forHTTPHeaderField: key) }
-        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         if let body = body { urlRequest.httpBody = try? JSONSerialization.data(withJSONObject: body) }
 
         let placeholder: Data? = "NO BODY".data(using: .utf8)
