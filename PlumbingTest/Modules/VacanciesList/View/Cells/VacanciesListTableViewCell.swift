@@ -121,7 +121,8 @@ class VacanciesListTableViewCell: UITableViewCell {
         salaryLabel.text = (vacancy.salary?.from ?? 0) == 0 ? "" : salaryText
         nameOfEmployerLabel.text = vacancy.employer?.name ?? ""
         requirementLabel.attributedText = vacancy.snippet?.requirement?.htmlAttributedString() ?? NSAttributedString()
-        responsibilityLabel.text = vacancy.snippet?.responsibility ?? ""
+        responsibilityLabel.attributedText =
+            vacancy.snippet?.responsibility?.htmlAttributedString() ?? NSAttributedString()
     }
 }
 

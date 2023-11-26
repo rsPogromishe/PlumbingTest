@@ -9,9 +9,7 @@ import UIKit
 
 final class FindVacancyAssemble {
     static func assembleFindVacancyModule() -> UIViewController {
-        let presenter = FindVacancyPresenter()
-        let view = FindVacancyListViewController(presenter: presenter)
-        presenter.view = view
+        let view = FindVacancyListViewController()
         return view
     }
 }

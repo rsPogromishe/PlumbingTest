@@ -9,9 +9,8 @@ import UIKit
 
 final class VacancyInfoAssemble {
     static func assembleVacancyInfoModule(vacancyID: String) -> UIViewController {
-        let presenter = VacancyInfoPresenter(vacancyID: vacancyID)
-        let view = VacancyInfoViewController(presenter: presenter)
-        presenter.view = view
+        let viewModel = VacancyInfoViewModel(vacancyID: vacancyID)
+        let view = VacancyInfoViewController(viewModel: viewModel)
         return view
     }
 }

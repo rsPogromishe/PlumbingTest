@@ -8,5 +8,5 @@
 import Foundation
 
 struct SearchVacanciesModel: Codable {
-    let items: [VacancyModel]?
+    var items: [VacancyModel]?
 }

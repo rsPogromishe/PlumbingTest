@@ -9,7 +9,8 @@ import UIKit
 import Combine
 
 class VacancyInfoViewController: UIViewController {
-    private var presenter: VacancyInfoPresenterProtocol
+    private var viewModel: VacancyInfoViewModel
+    private var bag = Set<AnyCancellable>()
 
     private lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
@@ -45,7 +46,6 @@ class VacancyInfoViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 14, weight: .thin)
-        label.text = "Адрес:"
         return label
     }()
 
@@ -57,8 +57,8 @@ class VacancyInfoViewController: UIViewController {
         return label
     }()
 
-    init(presenter: VacancyInfoPresenterProtocol) {
-        self.presenter = presenter
+    init(viewModel: VacancyInfoViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -70,24 +70,27 @@ class VacancyInfoViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupUI()
-        presenter.getVacancyInfo()
+        bindingUI()
     }
-}
 
-// MARK: - VacancyInfoViewInput
-
-extension VacancyInfoViewController: VacancyInfoViewInput {
-    func updateView(vacancy: VacancyModel) {
-        vacancyNameLabel.text = vacancy.name ?? ""
-        var salaryText = "От \(vacancy.salary?.from ?? 0)"
-        if (vacancy.salary?.to ?? 0) != 0 {
-            salaryText += " до \(vacancy.salary?.to ?? 0) \(vacancy.salary?.currency ?? "")"
-        } else {
-            salaryText += " \(vacancy.salary?.currency ?? "")"
-        }
-        salaryLabel.text = (vacancy.salary?.from ?? 0) == 0 ? "" : salaryText
-        vacancyDescLabel.attributedText = vacancy.description?.htmlAttributedString() ?? NSAttributedString()
-        addressLabel.text = vacancy.address?.raw ?? ""
+    private func bindingUI() {
+        viewModel.vacancyInfo
+            .sink { [weak self] vacancy in
+                guard let self = self else { return }
+                self.vacancyNameLabel.text = vacancy?.name ?? ""
+                var salaryText = "От \(vacancy?.salary?.from ?? 0)"
+                if (vacancy?.salary?.to ?? 0) != 0 {
+                    salaryText += " до \(vacancy?.salary?.to ?? 0) \(vacancy?.salary?.currency ?? "")"
+                } else {
+                    salaryText += " \(vacancy?.salary?.currency ?? "")"
+                }
+                self.salaryLabel.text = (vacancy?.salary?.from ?? 0) == 0 ? "" : salaryText
+                self.vacancyDescLabel.attributedText =
+                    vacancy?.description?.htmlAttributedString() ?? NSAttributedString()
+                self.addressTitleLabel.text = "Адрес:"
+                self.addressLabel.text = vacancy?.address?.raw ?? ""
+            }
+            .store(in: &bag)
     }
 }
 

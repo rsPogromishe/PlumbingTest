@@ -14,15 +14,13 @@
 		582B442E2B0E54DB008DEDB3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B442D2B0E54DB008DEDB3 /* SearchBar.swift */; };
 		582B44342B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B44332B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift */; };
 		582B44372B0E6E19008DEDB3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B44362B0E6E19008DEDB3 /* String.swift */; };
-		582B443B2B0FDD01008DEDB3 /* FindVacancyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B443A2B0FDD01008DEDB3 /* FindVacancyPresenter.swift */; };
-		582B443D2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B443C2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift */; };
 		582B443F2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B443E2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift */; };
-		582B44412B0FDDC1008DEDB3 /* FindVacancyViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B44402B0FDDC1008DEDB3 /* FindVacancyViewInput.swift */; };
 		58643CF52B10DE5B0071D27C /* VacancyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58643CF42B10DE5B0071D27C /* VacancyInfoViewController.swift */; };
-		58643CF72B10E4E40071D27C /* VacancyInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58643CF62B10E4E40071D27C /* VacancyInfoPresenter.swift */; };
-		58643CF92B10E4F10071D27C /* VacancyInfoPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58643CF82B10E4F10071D27C /* VacancyInfoPresenterProtocol.swift */; };
-		58643CFB2B10E6500071D27C /* VacancyInfoViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58643CFA2B10E6500071D27C /* VacancyInfoViewInput.swift */; };
 		58643CFD2B10E7380071D27C /* VacancyInfoAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58643CFC2B10E7380071D27C /* VacancyInfoAssemble.swift */; };
+		589FEE4C2B120C390026D34E /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FEE4B2B120C390026D34E /* UITextField.swift */; };
+		589FEE4E2B120E310026D34E /* FindVacancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FEE4D2B120E310026D34E /* FindVacancyViewModel.swift */; };
+		589FEE502B1238B90026D34E /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FEE4F2B1238B90026D34E /* Publisher.swift */; };
+		589FEE522B13DEBC0026D34E /* VacancyInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FEE512B13DEBC0026D34E /* VacancyInfoViewModel.swift */; };
 		58DD48D02B0E0E8100F597DC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD48CF2B0E0E8100F597DC /* NetworkService.swift */; };
 		58DD48D32B0E103500F597DC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD48D22B0E103500F597DC /* NetworkError.swift */; };
 		58F8E4452B0E0C28002D9147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F8E4442B0E0C28002D9147 /* AppDelegate.swift */; };
@@ -40,15 +38,13 @@
 		582B442D2B0E54DB008DEDB3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		582B44332B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesListTableViewCell.swift; sourceTree = "<group>"; };
 		582B44362B0E6E19008DEDB3 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		582B443A2B0FDD01008DEDB3 /* FindVacancyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyPresenter.swift; sourceTree = "<group>"; };
-		582B443C2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyPresenterProtocol.swift; sourceTree = "<group>"; };
 		582B443E2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyAssemble.swift; sourceTree = "<group>"; };
-		582B44402B0FDDC1008DEDB3 /* FindVacancyViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyViewInput.swift; sourceTree = "<group>"; };
 		58643CF42B10DE5B0071D27C /* VacancyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfoViewController.swift; sourceTree = "<group>"; };
-		58643CF62B10E4E40071D27C /* VacancyInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfoPresenter.swift; sourceTree = "<group>"; };
-		58643CF82B10E4F10071D27C /* VacancyInfoPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfoPresenterProtocol.swift; sourceTree = "<group>"; };
-		58643CFA2B10E6500071D27C /* VacancyInfoViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfoViewInput.swift; sourceTree = "<group>"; };
 		58643CFC2B10E7380071D27C /* VacancyInfoAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfoAssemble.swift; sourceTree = "<group>"; };
+		589FEE4B2B120C390026D34E /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		589FEE4D2B120E310026D34E /* FindVacancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVacancyViewModel.swift; sourceTree = "<group>"; };
+		589FEE4F2B1238B90026D34E /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		589FEE512B13DEBC0026D34E /* VacancyInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfoViewModel.swift; sourceTree = "<group>"; };
 		58DD48CF2B0E0E8100F597DC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		58DD48D22B0E103500F597DC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		58F8E4412B0E0C28002D9147 /* PlumbingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlumbingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				582B44392B0FDCB2008DEDB3 /* Assemble */,
-				582B44382B0FDC9F008DEDB3 /* Presenter */,
+				582B44382B0FDC9F008DEDB3 /* ViewModel */,
 				582B44312B0E5AFC008DEDB3 /* View */,
 			);
 			path = VacanciesList;
@@ -131,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				58F8E4482B0E0C28002D9147 /* FindVacancyListViewController.swift */,
-				582B44402B0FDDC1008DEDB3 /* FindVacancyViewInput.swift */,
 				582B44322B0E5B16008DEDB3 /* Cells */,
 			);
 			path = View;
@@ -149,17 +144,18 @@
 			isa = PBXGroup;
 			children = (
 				582B44362B0E6E19008DEDB3 /* String.swift */,
+				589FEE4B2B120C390026D34E /* UITextField.swift */,
+				589FEE4F2B1238B90026D34E /* Publisher.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		582B44382B0FDC9F008DEDB3 /* Presenter */ = {
+		582B44382B0FDC9F008DEDB3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				582B443A2B0FDD01008DEDB3 /* FindVacancyPresenter.swift */,
-				582B443C2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift */,
+				589FEE4D2B120E310026D34E /* FindVacancyViewModel.swift */,
 			);
-			path = Presenter;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		582B44392B0FDCB2008DEDB3 /* Assemble */ = {
@@ -184,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				58643CF42B10DE5B0071D27C /* VacancyInfoViewController.swift */,
-				58643CFA2B10E6500071D27C /* VacancyInfoViewInput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,8 +187,7 @@
 		58643CF22B10DE450071D27C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				58643CF62B10E4E40071D27C /* VacancyInfoPresenter.swift */,
-				58643CF82B10E4F10071D27C /* VacancyInfoPresenterProtocol.swift */,
+				589FEE512B13DEBC0026D34E /* VacancyInfoViewModel.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -418,20 +412,18 @@
 			files = (
 				58F8E4492B0E0C28002D9147 /* FindVacancyListViewController.swift in Sources */,
 				582B44372B0E6E19008DEDB3 /* String.swift in Sources */,
+				589FEE4C2B120C390026D34E /* UITextField.swift in Sources */,
 				58F8E4452B0E0C28002D9147 /* AppDelegate.swift in Sources */,
 				58DD48D02B0E0E8100F597DC /* NetworkService.swift in Sources */,
-				58643CF72B10E4E40071D27C /* VacancyInfoPresenter.swift in Sources */,
-				58643CFB2B10E6500071D27C /* VacancyInfoViewInput.swift in Sources */,
+				589FEE522B13DEBC0026D34E /* VacancyInfoViewModel.swift in Sources */,
+				589FEE502B1238B90026D34E /* Publisher.swift in Sources */,
 				582B442B2B0E168A008DEDB3 /* VacancyModel.swift in Sources */,
 				58F8E4472B0E0C28002D9147 /* SceneDelegate.swift in Sources */,
-				582B44412B0FDDC1008DEDB3 /* FindVacancyViewInput.swift in Sources */,
 				58643CFD2B10E7380071D27C /* VacancyInfoAssemble.swift in Sources */,
-				582B443D2B0FDD11008DEDB3 /* FindVacancyPresenterProtocol.swift in Sources */,
 				582B442E2B0E54DB008DEDB3 /* SearchBar.swift in Sources */,
-				58643CF92B10E4F10071D27C /* VacancyInfoPresenterProtocol.swift in Sources */,
+				589FEE4E2B120E310026D34E /* FindVacancyViewModel.swift in Sources */,
 				582B443F2B0FDD6A008DEDB3 /* FindVacancyAssemble.swift in Sources */,
 				58643CF52B10DE5B0071D27C /* VacancyInfoViewController.swift in Sources */,
-				582B443B2B0FDD01008DEDB3 /* FindVacancyPresenter.swift in Sources */,
 				582B44342B0E5B27008DEDB3 /* VacanciesListTableViewCell.swift in Sources */,
 				582B44262B0E1282008DEDB3 /* API.swift in Sources */,
 				58DD48D32B0E103500F597DC /* NetworkError.swift in Sources */,

@@ -9,13 +9,13 @@ import UIKit
 import Combine
 
 class FindVacancyListViewController: UIViewController {
-    private var presenter: FindVacancyPresenterProtocol
+    private let viewModel = FindVacancyViewModel()
+    private var bag = Set<AnyCancellable>()
 
     private lazy var searchBar: UITextField = {
         let search = SearchBar()
         search.delegate = self
         search.translatesAutoresizingMaskIntoConstraints = false
-        search.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         return search
     }()
 
@@ -29,7 +29,6 @@ class FindVacancyListViewController: UIViewController {
             VacanciesListTableViewCell.self,
             forCellReuseIdentifier: VacanciesListTableViewCell.identifier
         )
-        tableView.isHidden = true
         return tableView
     }()
 
@@ -43,44 +42,37 @@ class FindVacancyListViewController: UIViewController {
         return label
     }()
 
-    init(presenter: FindVacancyPresenterProtocol) {
-        self.presenter = presenter
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.navigationItem.title = "Вакансии hh.ru"
         setupUI()
+        bindingTextField()
+        bindingTableView()
     }
 
-    @objc func textFieldDidChange(_ textField: UITextField) {
-        if textField.text?.count ?? 0 >= 3 {
-            presenter.getVacancy(searchText: textField.text ?? "", pageNumber: 0)
-        } else if textField.text?.isEmpty == true {
-            presenter.removeAllVacancies()
-        }
-    }
-}
-
-// MARK: FindVacancyViewInput
-
-extension FindVacancyListViewController: FindVacancyViewInput {
-    func reloadData(isVacanciesEmpty: Bool) {
-        self.tableView.reloadData()
-        tableView.isHidden = isVacanciesEmpty
-        emptyListLabel.isHidden = !isVacanciesEmpty
+    func bindingTextField() {
+        searchBar.publisher
+            .assign(to: \.searchText, on: viewModel)
+            .store(in: &bag)
     }
 
-    func openVacancyInfo(viewController: UIViewController) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.navigationController?.pushViewController(viewController, animated: true)
-        }
+    func bindingTableView() {
+        viewModel.vacancies
+            .sink { [weak self] _ in
+                guard let self = self else { return }
+                self.tableView.reloadData()
+            }
+            .store(in: &bag)
+
+        viewModel.$searchText
+            .sink { [weak self] value in
+                guard let self = self else { return }
+                self.tableView.isHidden = value.count < 1
+                self.emptyListLabel.isHidden = value.count >= 1
+                if value == "" { self.viewModel.vacancies.value.items?.removeAll() }
+            }
+            .store(in: &bag)
     }
 }
 
@@ -88,28 +80,34 @@ extension FindVacancyListViewController: FindVacancyViewInput {
 
 extension FindVacancyListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.vacancies.count
+        return viewModel.vacancies.value.items?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(
             withIdentifier: VacanciesListTableViewCell.identifier,
             for: indexPath
-        ) as? VacanciesListTableViewCell {
-            cell.configure(vacancy: presenter.vacancies[indexPath.row])
+        ) as? VacanciesListTableViewCell,
+           let vacancyInfo = viewModel.vacancies.value.items?[indexPath.row] {
+            cell.configure(vacancy: vacancyInfo)
             return cell
         }
         return UITableViewCell()
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.openVacancyInfo(indexPath: indexPath.row)
-        tableView.deselectRow(at: indexPath, animated: true)
+        let viewController = VacancyInfoAssemble.assembleVacancyInfoModule(
+            vacancyID: viewModel.vacancies.value.items?[indexPath.row].id ?? ""
+        )
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.navigationController?.pushViewController(viewController, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == self.presenter.vacancies.count - 5 {
-            presenter.getVacancy(searchText: searchBar.text ?? "", pageNumber: 1)
+        if indexPath.row == (viewModel.vacancies.value.items?.count ?? 0) - 5 {
+            self.viewModel.pageNumber += 1
         }
     }
 }
